@@ -3,14 +3,13 @@
 Este archivo describe todos los pasos realizados para configurar, probar y desplegar la aplicación de *Producto* utilizando *Spring Boot, **Docker, **JUnit, **Mockito, y **Kubernetes*.
 
 ## Índice
-1. [Descripción del Proyecto](#descripción-del-proyecto)  
-2. [Requisitos Previos](#requisitos-previos)  
-3. [Configuración del Proyecto](#configuración-del-proyecto)  
-4. [Pruebas Unitarias](#pruebas-unitarias)  
-5. [Construcción de Imagen Docker](#construcción-de-imagen-docker)  
-6. [Despliegue en Kubernetes](#despliegue-en-kubernetes)  
-7. [Acceso a Swagger y H2](#acceso-a-swagger-y-h2)  
-8. [Comandos Utilizados](#comandos-utilizados)  
+1. [Requisitos Previos](#requisitos-previos)  
+2. [Configuración del Proyecto](#configuración-del-proyecto)  
+3. [Pruebas Unitarias](#pruebas-unitarias)  
+4. [Construcción de Imagen Docker](#construcción-de-imagen-docker)  
+5. [Despliegue en Kubernetes](#despliegue-en-kubernetes)  
+6. [Acceso a Swagger y H2](#acceso-a-swagger-y-h2)  
+7. [Comandos Utilizados](#comandos-utilizados)  
 
 
 ## Descripción del Proyecto
