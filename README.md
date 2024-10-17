@@ -13,7 +13,7 @@ Este archivo describe todos los pasos realizados para configurar, probar y despl
 
 
 ## Descripción del Proyecto
-El proyecto *Producto* es una aplicación basada en *Spring Boot* que permite gestionar órdenes y productos. La aplicación incluye servicios REST para la creación y consulta de productos y órdenes, y está configurada para pruebas unitarias, contenerización con *Docker* y despliegue en un clúster de *Kubernetes*.
+Este proyecto de prueba *Producto* es una aplicación basada en *Spring Boot* que permite gestionar órdenes y productos. La aplicación incluye servicios REST para la creación y consulta de productos y órdenes, y está configurada para pruebas unitarias, contenerización con *Docker* y despliegue en un clúster de *Kubernetes*.
 
 ## Requisitos Previos
 - *Java 17*  
