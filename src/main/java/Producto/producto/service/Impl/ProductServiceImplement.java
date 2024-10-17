@@ -11,35 +11,36 @@ import java.util.Optional;
 
 @Service
 public class ProductServiceImplement implements ProductService {
-	
+
 	@Autowired
-    private ProductRepository productRepository; // Inyección del servicio
+	private ProductRepository productRepository;
 
 	@Override
-    public Iterable<Product> listAllProducts() {
-        // Lógica para obtener todos los productos
+	public Iterable<Product> listAllProducts() {
+
 		Iterable<Product> products = this.productRepository.findAll();
-	    System.out.println("Productos recuperados del repositorio: " + products);
-        return products;
-    }
+		System.out.println("Productos recuperados del repositorio: " + products);
+		return products;
+	}
 
 	@Override
 	public Product retrieveProductById(Long id) {
 		Optional<Product> product = productRepository.findById(id);
 		if (product.isPresent()) {
-			return product.get(); // Retorna el producto si está presente
+			return product.get();
 		} else {
-			return null; // Retorna null si no se encuentra el producto
+			return null;
 		}
 	}
-	@Override
-    public Product createProduct(Product product) {
 
-    	try {
-    		return productRepository.save(product);
-    	} catch (Exception e) {
-    		e.printStackTrace(); // Imprime la traza de la excepción en la consola
-            throw new RuntimeException("Error al guardar el nuevo producto en la base de datos");
-    	}
-    }
+	@Override
+	public Product createProduct(Product product) {
+
+		try {
+			return productRepository.save(product);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("Error al guardar el nuevo producto en la base de datos");
+		}
+	}
 }
